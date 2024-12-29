@@ -256,8 +256,8 @@ body{
     padding-right: 20px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
+    gap: 100px;
+    justify-content: center;
 }
 .skills-list{
     display: flex;
@@ -283,11 +283,11 @@ body{
     flex-direction: row;
 }
 .skill-description{
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 140px;
+    height: 150px;
     background-color: black;
     color:white;
     padding-left: 15px;
