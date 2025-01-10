@@ -12,14 +12,24 @@ transition: all 0.5s ease;
     height: 0;
 }
 
-.font, .section-description, .form-header, .heading-white, .text, .text-smaller{
+.font,.skill,.active-btns, .section-description, .form-header, .heading-white, .text, .text-smaller{
     font-family: "Inter",sans-serif;
 }
 
-
-.shadow{
-    box-shadow: -25px 25px;
+.contact-btn,.section-description, .description h3,.description p{
+    font-family: 'Poppins',sans-serif;
 }
+
+/* description sections font properties  */
+.name-description, .section-description{
+    font-size: 1rem;
+    font-weight: 300;
+    color:rgb(65, 65, 65);
+    text-align: left;
+    padding-bottom: 20px;
+    /* text-transform: uppercase; */
+}
+
 
 body{
     display: flex;
@@ -29,20 +39,12 @@ body{
 .container, .container-black{
     padding-left: 30px;
     padding-right: 75px;
-    background-color: rgb(255, 255, 0,0.7);
+    /* background-color: ; */
     
 }
-.division-left{
-    background-color: rgb(255, 255, 0,0.7);
-}
-.line-left{
-    width: 30%;
-    display: block;
-    /* height: 3px; */
-    border: 2px solid black;
-    background-color: rgb(255, 255, 0,0.7);
-}
 
+
+/* navbar content css */
 .navbar-content{
     display: flex;
     flex-direction: row;
@@ -69,23 +71,28 @@ body{
     flex-direction: column;
     justify-content: center;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 13px;
     padding: 15px 35px;
 }
 .navbar-right a{
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: black;
+    justify-content: center;
+
+}
+.navbar-left a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
 }
 .navbar-text:hover{
     background-color: black;
     color: white;
 }
-/* .navbar-text a:hover{
-    background-color: black;
-    color: white;
-    
-} */
-
 .navbar-right{
     display: flex;
     flex-direction: row;
@@ -93,16 +100,23 @@ body{
     
 }
 
+/* portfoli description section  */
 .heading{
     margin-top: 30px;
-    margin-left: 100px;
     display: inline-block;
     font-family: 'Inter',sans-serif;
     font-size: 30px;
     font-weight: 800;
     padding:15px;
-    background-color: black;
+    background-color: rgb(65, 65, 65);;
     color: white
+}
+
+.heading:hover{
+    background-color: white;
+    color: rgb(65, 65, 65);;
+    margin-left: 7px;
+    box-shadow: -7px 7px rgb(65, 65, 65);;
 }
 
 .content{
@@ -114,14 +128,108 @@ body{
     padding-bottom: 70px;
 }
 
-.my-photo{
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    height: 300px;
+    width: 300px;
+  }
+  
+  /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+  #inner-orbit {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    width: 150px;
+    height: 150px;
+    border: 2px rgb(100, 100, 100) dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+  }
+  /* #inner-orbit img{
+    height:4rem;
+  } */
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .inner-orbit-cirlces-1 {
+    position: absolute;
+    top: 62px;
+    left: -7px;
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    background-color: black;
+    border: 1px solid black;
+  }
+  
+  
+  /* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+  #middle-orbit {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 225px;
+    height: 225px;
+    border: 2px rgb(100, 100, 100) dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 15s linear infinite;
+    animation: spin-right 15s linear infinite;
+  }
+  
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .middle-orbit-cirlces {
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #000000;
+  }
+  
+  /* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+  #outer-orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 294px;
+    height: 294px;
+    border: 2px rgb(100, 100, 100) dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 20s linear infinite;
+    animation: spin-right 20s linear infinite;
+  }
+  
+  /* ---------- Repeating styles for the outer orbiting circles ---------- */
+  .outer-orbit-cirlces {
+    position: absolute;
+    top: -17px;
+    left: 125px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #000c0a;
+  }
+  
+  /* ---------- Animation ---------- */
+  @-webkit-keyframes spin-right {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+/* .my-photo{
     margin-left: 110px;
-}
+} */
 
 .my-photo:hover{
-    /* margin-left: -2px; */
-    margin-top: 20px;
-    box-shadow: 25px -25px black;
+
 }
 
 .content-description{
@@ -130,26 +238,6 @@ body{
     font-family: 'Inter',sans-serif;
 }
 
-.name{
-    font-size: 100px;
-    font-weight: 1000;
-    color: white;
-    text-shadow: -10px 10px black;
-    padding-bottom: 25px;
-}
-.name:hover{
-    color: black;
-    text-shadow: -10px 10px white;
-}
-
-.name-description, .section-description{
-    font-size: 16px;
-    font-weight: 700;
-    color:black;
-    text-align: left;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-}
 .social-icons{
     margin-top: 10px;
     margin-left: 20px;
@@ -240,129 +328,249 @@ body{
     box-shadow: 0 0 20px rgba(196, 25, 122, 0.925);
   }
 
+  .name{
+    font-size: 100px;
+    font-weight: 1000;
+    color: rgb(226, 226, 226);
+    text-shadow: -7px 7px rgb(65, 65, 65);
+    /* text-shadow: 7px -7px rgb(65, 65, 65); */
 
+    padding-bottom: 25px;
+}
+.name:hover{
+    color: black;
+    text-shadow: -3px 7px white;
+}
 
+.contact-btn{
+    margin-top: 25px;
+    width: 13%;
+    display: inline-block;
+    border: 1px solid rgb(65, 65, 65);
+    padding: 10px 25px;
+}
+.contact-btn a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.contact-btn:hover{
+    background-color: rgb(65, 65, 65);
 
+}
+.contact-btn:hover a{
+    color: white;
+}
+
+.experience{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('5134341.jpg');    background-size: cover;
+    
+}
  .section-description{
-    margin-left: 100px;
-    padding-right: 20px;
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
  }
 
-.skills{
-    margin-left: 100px;
-    padding-top: 15px;
-    padding-right: 20px;
+ .skills{
+    margin-top: 25px;
+ } 
+  .skill-cards {
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
-    gap: 100px;
     justify-content: center;
-}
-.skills-list{
+    margin-bottom: 5px;
+  }
+  
+  .skill {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-.skills ul li{
-    list-style: none;
-    text-decoration: none;
-    padding-inline-start: 0px;
-    padding-bottom: 20px;
-}
-.skills-list li img{
+    /* border: 1px solid black; */
+    color: white;
+    background-color: rgb(65, 65, 65);
+    padding: 10px 20px;
+    margin: 0px 10px;
+    justify-content: center;
+  }
+  
+  .active-btns {
+    background-color: white;
+    color: black;
+    /* margin-top: -3px; */
+    font-size: 1.5rem;
+    box-shadow: 0px 5px rgb(65, 65, 65);
+    /* transition: all 0.5s ease; */
+  }
+  
+  .skill-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 140px;
-    height: 120px;
-    padding-top: 10px;
-}
-.skill{
+    /* margin-top: 10px; */
+  }
+  
+  .description {
     display: flex;
     flex-direction: row;
-}
-.skill-description{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: rgb(241, 241, 241);
+    /* box-shadow: 7px 7px rgb(158, 157, 157); */
+    /* border: 1px solid black; */
+    text-align: left;
+    padding: 15px 25px;
+    width: 70%;
     height: 150px;
-    background-color: black;
-    color:white;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 20px;
-    box-shadow: -10px 10px white;
-    font-size: 14px;
+    margin: 25px auto;
+    justify-content: center;
+    gap: 25px;
+  }
+  .description-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .description-content h3{
+    color: rgb(65, 65, 65);
+    font-weight: 700px;
+    font-size: 2rem;
+  }
+  .description-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .description-img img {
+    height: 5em;
+    /* width: 5em; */
+    padding: auto 0px;
+  }
+  .description-1,
+  .description-2,
+  .description-3,
+  .description-5,
+  .description-4,
+  .description-7,
+  .description-6 {
+    display: none;
+  }
+  .active {
+    display: flex !important;
+  }
+  
+/* project section  */
+.projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:30px;
 }
-.skill-description:hover{
-    box-shadow: 10px -10px white;
+.projects-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.project{
+  width: 12rem;
+  border: 1px solid rgb(65 ,65,65);
+  text-align: left;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.active-project{
+  background-color: rgb(65,65,65);
+  color: white;
 }
 
-.movies {
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
+
+.movies-1,.movies-2,.movies-3,.movies-4,.movies-5 {
+  /* margin-left: 100px; */
+  display: none;
+  flex-direction: column;
+}
+.active-project-description{
+  display: flex !important;
 }
 
 .movie-row {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    padding-bottom: 30px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  /* gap: 50px; */
+  /* padding-bottom: 30px; */
+  justify-content: center;
 }
 
 .movie {
-    /* border: 1px solid black; */
-    height: 380px;
-    width: 270px;
-    perspective: 1000px;
-    position: relative; }
+  /* border: 1px solid black; */
+  height: 350px;
+  width: 800px;
+  perspective: 1000px;
+  position: relative; }
 
 .movie-animation {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d; 
-    position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; 
+  position: relative;
 }
 
 
 .movie:hover .movie-animation {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .poster-front, .poster-back {
-    position: absolute; 
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; 
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
 }
 
-.poster-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+.poster-front {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: left;
+  margin: auto;
+  color: rgb(65,65,65);
+  background-color: rgb(226, 226, 226);
+  /* transform: rotateY(180deg);  */
+}
+.poster-front p{
+    margin-top: 25px;
+}
+.img-height{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+
+}
+.img-height img{
+  width: 100%;
+  position: relative;
+  /* height: 100%; */
+}
+.poster-front p{
+  padding-left: 20px;
+  font-size: 2rem;
 }
 
 .poster-back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    color: white;
-    background-color: black;
-    transform: rotateY(180deg); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  color: white;
+  background-color: black;
+  transform: rotateY(180deg); 
 }
 
-.heading:hover{
-    background-color: white;
-    color: black;
-    box-shadow: -15px 15px black;
-}
+
+
 .form{
     display: flex;
     flex-direction: column;

@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,11 +23,13 @@
                 <div class="navbar-content">
                     <div class="navbar-left">
                         <div class="logo">
-                            <img src="loop.png" alt="">
+                            <img src="img\loop.png" alt="">
                         </div>
-                        <div class="navbar-text" style="padding: 15px !important;">
-                            HOME
-                        </div>
+                        <a href="#">
+                            <div class="navbar-text" style="padding: 15px !important;">
+                                HOME
+                            </div>
+                        </a>
                     </div>
                         <div class="navbar-right">
                             <a href="#experience">
@@ -48,7 +53,7 @@
         </nav>
     </header>
 
-    <div class="division-left"><div class="line-left"></div></div>
+    <!-- <div class="division-left"><div class="line-left"></div></div> -->
 
     <section>
         <div class="porfolio-description">
@@ -59,52 +64,78 @@
 
                 <div class="content">
                     <div class="my-photo shadow">
-                        <img src="MYPHOTO.jpg" alt="">
+                        <div id="circle-orbit-container">
+                            
+                            <!-- Circles closest to the central point -->
+                            <div id="inner-orbit">
+                                <!-- <div>
+                                    text
+                                </div>
+                                <img src="./img/MYPHOTO-modified.jpg" alt=""> -->
+                                <div class="inner-orbit-cirlces-1"></div>
+    
+
+                            </div>
+                          
+                            <!-- Circles second closest to the central point -->
+                            <div id="middle-orbit">
+                              <div class="middle-orbit-cirlces"></div>
+                            </div>
+                          
+                            <!-- Circles furthest away to the central point -->
+                            <div id="outer-orbit">
+                              <div class="outer-orbit-cirlces"></div>
+                            </div>
+                          
+                          </div>
                     </div>
                     <div class="content-description">
                         <div class="name font">
                             ANANT SHARMA
                         </div>
-                        <!-- that is the only good photo i have of myself -->
                         <div class="name-description font">
                             Hi, I am Anant, I am a Software Developer from India.
                             I am currently learning fullstack development. I like 
                             creating webpage designs, Machine Learning projects and 
                             watching movies.
                         </div>
-                        <div class="name-description">
+                        <!-- <div class="name-description">
                             Thank You for visiting my portfolio !!
-                        </div>
-                        <!-- add the typing animation -->
+                        </div> -->
                         <div class="social-media font">
                             <ul class="social-icons">
                                 <li  class="icon-list icon-list-1">
                                     <a href=" https://www.facebook.com/profile.php?id=100075162015602">
-                                    <img src="facebook.png" alt="">
+                                    <img src="./img/facebook.png" alt="">
                                     </a>
                                 </li>
                                 <li class="icon-list icon-list-2">
                                     <a href="https://github.com/anants23O02">
-                                    <img src="github-logo.png" alt="">
+                                    <img src="./img/github-logo.png" alt="">
                                     </a>
                                 </li>
                                 <li class="icon-list icon-list-3">
                                     <a href="">
-                                    <img src="linkedinblack.png" alt="">
+                                    <img src="./img/linkedinblack.png" alt="">
                                     </a>
                                 </li>
                                 <li class="icon-list icon-list-4">
                                     <a href="https://x.com/Anantsh75418469">
-                                    <img src="twitter.png" alt="">
+                                    <img src="./img/twitter.png" alt="">
                                     </a>
                                 </li>
                                 <li class="icon-list icon-list-5">
                                     <a href="https://www.instagram.com/imfiniteonly_23/">
-                                    <img src="insta.png" alt="">
+                                    <img src="./img/insta.png" alt="">
                                     </a>
                                 </li>
                          
                             </ul>
+                        </div>
+                        <div class="contact-btn">
+                            <a href="">
+                                CONTACT ME
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +144,7 @@
     </section>
 
 
-<div class="division-left"><div class="line-left"></div></div>
+<!-- <div class="division-left"><div class="line-left"></div></div> -->
    
 
 <section id="experience">
@@ -123,91 +154,152 @@
                     MY SKILLS AND EXPERIENCE
                 </div>
                 <div class="section-description">
-                    FOLLOWING ARE THE SKILLS THAT I HAVE GAINED OVER
-                    THE YEARS. I HAVE ALSO INCLUDED THE TECHNOLOGIES 
-                    I HAVE BEEN WORKING ON RECENTLY AND HAVE WORKED WITH 
-                    BEFORE. THESE ARE THE TECHNOLOGIES I USE IN MY DAY TO 
-                    DAY LIFE, I AM STILL LEARNING A FEW OF THEM BUT CONSTANTLY
-                    PRACTISING TO IMPROVE MYSELF.
+                    Following are the skills that I have gained over
+                    The years. I have also included the technologies 
+                    I have been working on recently and have worked with 
+                    Before. These are the technologies I use in my day to 
+                    Day life, I am still learning a few of them but constantly
+                    Practising to improve myself.
                 </div>
                 <div class="skills">
-                    <ul class="skills-list">
-                        <li class="skill">
-                            <img src="python-logo-only.png" alt=""  style="width:140px ;height:140px ;">
-                            <div class="skill-description">
-                                <h2 style="font-size: 18px;">
-                                    PYTHON
-                                </h2>
-                                I HAVE HANDS-ON EXPERINECE WITH PYTHON, WHERE I HAVE CREATED
-                                VARIOUS AUTOMATION TOOLS AND A FEW GAMES USING PYTHON. I AM 
-                                ABLE TO WORK WITH VARIOUS PYTHON LIBRARIES WITH EASE.
-                            </div>
-                        </li>
-                        <li class="skill">
-                            <img src="photoshop.png" alt="" style="width: 140px;height:140px ;">
-                            <div class="skill-description">
-                                <h2 style="font-size: 18px;">
-                                    PHOTOSHOP
-                                </h2>
-                                I HAVE BEEN USING THIS TOOL FOR 3 YEARS WHERE I MAINLY USE
-                                IT FOR CREATING DESIGNS AND POSTERS, ALSO I WELL VERSED IN 
-                                EDITING PHOTOS.
-                            </div>
-                        </li>
-                        <li class="skill">
-                            <img src="django-logo-negative.png" alt="" >
-                            <div class="skill-description">
-                                <h2 style="font-size: 18px;">
-                                    DJANGO
-                                </h2>
-                                FOR BUILDING A BACKEND I PREFER USING DJANGO IT IS A PYTHON 
-                                BASED WEB FRAMEWORK. IT IS ABLE TO HANDLE LARGE APPLICATION.
-                                DJANGO ALSO GIVES US VARIOUS TOOLS THAT ALLOWS US CREATING 
-                                BACKEND APPLICATIONS EASILY.
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="skills-list">
-                        <li class="skill">
-                            <img src="deep-learning.png" >
-                            <div class="skill-description">
-                                <h2 style="font-size: 18px;">
-                                    DEEP LEARNING
-                                </h2>
-                                IT IS ONE OF MY FAVORITE TOPICS. I AM ALWAYS INTERESTED IN 
-                                WORKING WITH DEEP LEARNING MODELS. MY FAVORITE TOPICS IN DEEP LEARNING 
-                                INCLUDES CONVOLUTIONAL NUERAL NETWORKS, LSTMS AND RNNs. 
-                            </div>
-                        </li>
-                        <li class="skill">
-                            <img src="Arduino_Logo.svg.png" >
-                            <div class="skill-description">
-                                <h2 style="font-size: 18px;">
-                                    IoT & ARDUINO
-                                </h2>
-                                ONE OF MY SKILLS IS WORKING WITH SENSORS AND MICROPROCESSORS
-                                WHERE I LOVE CREATING SMALL IoT PROJECTS. I AM ABLE TO PROGRAM
-                                ARDUINOS AND DIFFERENT SENSORS USING IT TO CREATE USEFUL IoT PROJECTS.
-                            </div>
-                        </li>
-                        <li class="skill">
-                            <img src="react-1.svg" >
-                            <div class="skill-description">
-                                <h2 style="font-size: 18px;">
-                                    REACT
-                                </h2>
-                                FOR FRONTEND APPLICATIONS I PREFER USING REACT IT IS A JAVASCRIPT 
-                                LIBRARY WHERE I USE IT FOR BUILDING USER INTERFACES. I LIKE USING 
-                                REACT FOR ITS ABILITY TO USE UI COMPONENTS REPEATEDLY
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="container-white">
+                        <div class="skill-cards">
+                                <div class="skill  active-btns" data-tab="1">Django</div>
+                                <div class="skill " data-tab="2">Machine Learning</div>
+                                <div class="skill " data-tab="3">JavaScript</div>
+                                <div class="skill " data-tab="4">Photoshop</div>
+                                <div class="skill " data-tab="5">React</div>
+                                <div class="skill " data-tab="6">IoT & Arduino</div>
+                                <div class="skill " data-tab="7">Python</div>
+                            </div>  
+                        <div class="skill-description">
+                          <div class="description description-1 active">
+                            <div class="description-img">
+                                <img src="./img/django-logo-negative-modified.png" alt="" />
+                              </div>
+                              <div class="description-content">
+                                  <p>
+                                      <h3>
+                                          Django
+                                      </h3>
+                                      I have been working with python since last 3 year. I am able to
+                                      work with automating scripts, creating models. Python has been my
+                                      favorite programming language since I started working with it. The
+                                      support for libraries is awesome and help a lot for developing all
+                                      types of application
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="description description-2 desc-all">
+                            <div class="description-img">
+                                <img src="./img/deep-learning-modified.png" alt="" />
+                              </div>
+                              <div class="description-content">
+                                  <p>
+                                      <h3>
+                                          Machine Learning
+                                      </h3>
+                                      I have been working with python since last 3 year. I am able to
+                                      work with automating scripts, creating models. Python has been my
+                                      favorite programming language since I started working with it. The
+                                      support for libraries is awesome and help a lot for developing all
+                                      types of application
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="description description-3 desc-all">
+                            <div class="description-img">
+                                <img src="./img/JavaScript-logo-modified.png" alt="" />
+                              </div>
+                              <div class="description-content">
+                                  <p>
+                                      <h3>
+                                          JavaScript
+                                      </h3>
+                                      I have been working with python since last 3 year. I am able to
+                                      work with automating scripts, creating models. Python has been my
+                                      favorite programming language since I started working with it. The
+                                      support for libraries is awesome and help a lot for developing all
+                                      types of application
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="description description-4 desc-all">
+                            <div class="description-img">
+                                <img src="./img/photoshop-modified.png" alt="" />
+                              </div>
+                              <div class="description-content">
+                                  <p>
+                                      <h3>
+                                          Photoshop
+                                      </h3>
+                                      I have been working with python since last 3 year. I am able to
+                                      work with automating scripts, creating models. Python has been my
+                                      favorite programming language since I started working with it. The
+                                      support for libraries is awesome and help a lot for developing all
+                                      types of application
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="description description-5 desc-all">
+                            <div class="description-img">
+                                <img src="./img/React-icon.svg-modified.png" alt="" />
+                              </div>
+                              <div class="description-content">
+                                  <p>
+                                      <h3>
+                                          React
+                                      </h3>
+                                      I have been working with python since last 3 year. I am able to
+                                      work with automating scripts, creating models. Python has been my
+                                      favorite programming language since I started working with it. The
+                                      support for libraries is awesome and help a lot for developing all
+                                      types of application
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="description description-6 desc-all">
+                            <div class="description-img">
+                                <img src="./img/Arduino_Logo.svg-modified.png" alt="" />
+                              </div>
+                              <div class="description-content">
+                                  <p>
+                                      <h3>
+                                          IoT & Arduino
+                                      </h3>
+                                      I have been working with python since last 3 year. I am able to
+                                      work with automating scripts, creating models. Python has been my
+                                      favorite programming language since I started working with it. The
+                                      support for libraries is awesome and help a lot for developing all
+                                      types of application
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="description description-7 desc-all">
+                            <div class="description-img">
+                                <img src="img\python-logo-only-modified.png" alt="" />
+                              </div>
+                              <div class="description-content">
+                                  <p>
+                                      <h3>
+                                          Python
+                                      </h3>
+                                      I have been working with python since last 3 year. I am able to
+                                      work with automating scripts, creating models. Python has been my
+                                      favorite programming language since I started working with it. The
+                                      support for libraries is awesome and help a lot for developing all
+                                      types of application
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
     </section>
 
-   <div class="division-left"><div class="line-left"></div></div>
+   <!-- <div class="division-left"><div class="line-left"></div></div> -->
 
     <section id="recomendations">
         <div class="recommendations">
@@ -221,160 +313,113 @@
                     FAVORITE MOVIES. THESE MOVIES CAPTURE THE VIBE I GO FOR, MOVIES 
                     THAT CREATED AN IMPACT OVER ME
                 </div>
-
-                <div class="movies">
-                    <div class="movie-row">
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="Noroi.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>Noroi: The Curse</p>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="pulp fiction.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>Pulp Fiction</p>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="perfect blue.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>Perfect Blue</p>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="The shawshank redemption.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>The Shawshank Redemption</p>
+                <div class="projects">
+                    <div class="projects-list">
+                        <div class="project project-1 " data-tab="1">Sentiment Analysis API</div>
+                        <div class="project project-2 active-project" data-tab="2">Retro Alien Shooter</div>
+                        <div class="project project-3" data-tab="3">KeepIT Diary</div>
+                        <div class="project project-4" data-tab="4">Mapty</div>
+                        <div class="project project-5" data-tab="5">Forkify</div>
+                    </div>
+                    <div class="project-description">
+                    <div class="movies-1 common-project-description ">
+                        <div class="movie-row">
+                            <div class="movie">
+                                <div class="movie-animation">
+                                    <div class="poster-front">
+                                        <div class="img-height">
+                                        <img src="./img/OIP.jpg" alt="">
+                                        </div>
+                                        <p>
+                                            Sentiment Analysis API
+                                        </p>
+                                    </div>
+                                    <div class="poster-back">
+                                        <p>This will be the image description as this is what we will seee on the back or not</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="movies">
-                    <div class="movie-row">
-
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="paprika.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>Paprika</p>
-                                </div>
-                            </div>
-                        </div>
-                
-
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="peppermint candy.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>Peppermint Candy</p>
+                    <div class="movies-2 common-project-description active-project-description">
+                        <div class="movie-row">
+                            <div class="movie">
+                                <div class="movie-animation">
+                                    <div class="poster-front">
+                                        <div class="img-height">
+                                            <img src="./img/Screenshot_21.png" alt="">
+                                        </div>
+                                        <p>
+                                            Alien Shooter
+                                        </p>
+                                    </div>
+                                    <div class="poster-back">
+                                        <p>This will be the image description as this is what we will seee on the back or not</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                
-
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="tokyo sonata.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>Tokyo Sonata</p>
-                                </div>
-                            </div>
-                        </div>
-                
-
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="back to the future.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>Back to the Future</p>
+                    </div><div class="movies-3 common-project-description">
+                        <div class="movie-row">
+                            <div class="movie">
+                                <div class="movie-animation">
+                                    <div class="poster-front">
+                                        <div class="img-height">
+                                            <img src="./img/keepITDiary.jpg" alt="">
+                                        </div>
+                                        <p>
+                                            KeepIT Diary Application
+                                        </p>
+                                    </div>
+                                    <div class="poster-back">
+                                        <p>This will be the image description as this is what we will seee on the back or not</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                
-                    <div class="movie-row">
-
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="nobody knows.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>Nobody Knows</p>
-                                </div>
-                            </div>
-                        </div>
-                
-
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="MV5BODhhODJiYTAtNGUzYS00MmI3LThkMjUtYjBkMTM2ZWM1NzQxXkEyXkFqcGc@._V1_FMjpg_UX736_.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>City of God</p>
+                    </div><div class="movies-4 common-project-description ">
+                        <div class="movie-row">
+                            <div class="movie">
+                                <div class="movie-animation">
+                                    <div class="poster-front">
+                                        <div class="img-height">
+                                            <img src="./img/Screenshot_24.png" alt="">
+                                        </div>
+                                        <p>
+                                            Mapty
+                                        </p>
+                                    </div>
+                                    <div class="poster-back">
+                                        <p>This will be the image description as this is what we will seee on the back or not</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                
-
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="the good the bad and the ugly.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>The Good, the Bad and the Ugly</p>
-                                </div>
-                            </div>
-                        </div>
-                
-
-                        <div class="movie">
-                            <div class="movie-animation">
-                                <div class="poster-front">
-                                    <img src="pianist.jpg" alt="">
-                                </div>
-                                <div class="poster-back">
-                                    <p>The Pianist</p>
+                    </div><div class="movies-5 common-project-description ">
+                        <div class="movie-row">
+                            <div class="movie">
+                                <div class="movie-animation">
+                                    <div class="poster-front">
+                                        <div class="img-height">
+                                            <img src="./img/Screenshot_23.png" alt="">
+                                        </div>
+                                        <p>
+                                            Forkify
+                                        </p>
+                                    </div>
+                                    <div class="poster-back">
+                                        <p>This will be the image description as this is what we will seee on the back or not</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
                 </div>
             </div>
-        </div>
+        
+            <script src="project.js"></script>
+                    </div>
+                </div>
     </section>
 
 
@@ -463,6 +508,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 
